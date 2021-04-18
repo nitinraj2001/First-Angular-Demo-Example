@@ -1,0 +1,40 @@
+<p align="center" style="color:black">sales-person-list works!</p>
+
+<table class="table table-hover">
+
+    <thead style="color:darkgreen">
+
+        <td>First Name</td>
+        <td>last Name</td>
+        <td>Email ID</td>
+        <td>Sales Volume</td>
+        <td>Met Quota?</td>
+
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let temporyList of theSalesPersonList">
+
+            <td>{{temporyList.firstName}}</td>
+
+            <td>{{temporyList.lastName}}</td>
+
+            <td>{{temporyList.email}}</td>
+
+            <td>{{temporyList.salesVolume| currency:'USD'}}</td>
+
+            <td>
+
+                <div *ngIf="temporyList.salesVolume>=60000; else myElseBlock">Yes</div>
+                <ng-template #myElseBlock>No</ng-template>
+
+            </td>
+
+
+        </tr>
+    </tbody>
+
+</table>
+
+
