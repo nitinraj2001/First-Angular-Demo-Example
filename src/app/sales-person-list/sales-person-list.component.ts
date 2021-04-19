@@ -8,7 +8,7 @@ import { SalesPerson} from './sales-person';
 })
 export class SalesPersonListComponent implements OnInit {
 
- theSalesPersonList : SalesPerson[]=[new SalesPerson("nitin","raj","nitinraj567@gmail.com",5678),
+ theSalesPersonList : SalesPerson[]=[new SalesPerson("rajvir pratab","singh","rajvirpratab2001@ymail.com",5678),
                                      new SalesPerson("ashish","kumar","ashishkumar2001@gmail.com",8988),
                                      new SalesPerson("ashutosh","pathak","ashutoshpathak2987@gmail.com",5696),
                                      new SalesPerson("puspak","sharma","puspak5467@gmail.com",9578)];
